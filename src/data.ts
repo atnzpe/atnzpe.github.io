@@ -98,7 +98,7 @@ export const instituicoes: Instituicao[] = [
   {
     sigla: 'COBRAM',
     nome: 'Confederação Brasileira de Artes Marciais',
-    trabalho: 'Desenvolvedor Web da diretoria administrativa: manutenção do site, apoio técnico e análise de qualidade (QA).',
+    trabalho: 'Desenvolvedor Web da diretoria administrativa: apoio técnico, presença digital e análise de qualidade (QA) do site.',
     stack: ['Desenvolvimento web', 'QA'],
     site: 'https://cobram.org/',
   },
