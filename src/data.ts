@@ -178,7 +178,7 @@ export const formacao = [
   { curso: 'Engenharia da Computação', instituicao: 'Descomplica Faculdade Digital', status: '2024 – 2027 · em andamento' },
   { curso: 'Técnico em Análise e Desenvolvimento de Sistemas', instituicao: 'ETE Jurandir Bezerra Lins', status: '2021 – 2022' },
   { curso: 'Aceleração de Carreira em Design Orientado a Dados', instituicao: 'CESAR School', status: '2025' },
-  { curso: 'Eletricista Industrial', instituicao: 'IFPE Campus Igarassu', status: '2026 – 2027 · em andamento' },
+  { curso: 'Qualificação Profissional em Eletricidade Industrial', instituicao: 'IFPE Campus Igarassu', status: '2026 – 2027 · em andamento' },
   { curso: 'Metrologia Dimensional', instituicao: 'IFOPI Igarassu', status: '2026' },
 ]
 
