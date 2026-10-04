@@ -19,7 +19,7 @@ export const perfil = {
 export const sobre = [
   'Tenho mais de 14 anos em suporte B2B, infraestrutura e implantação de sistemas: suporte ao NCR Colibri, onboarding em food service e, no Grupo Boticário, implantação e sustentação de mais de 4.500 PDVs em franquias, incluindo migrações de dados de sistemas legados.',
   'Sou técnico em Análise e Desenvolvimento de Sistemas e estou no 5º período de Engenharia da Computação. Aprendo construindo: cada projeto deste portfólio começou do zero e me obrigou a estudar o que eu ainda não sabia.',
-  'Uso Claude Code e Gemini como parceiros diários de programação, na arquitetura, no código e na documentação. A IA acelera; entender, revisar e testar o resultado continua sendo responsabilidade minha.',
+  'Desenvolvo em pair programming com IA (Claude Code e Gemini). Meu papel: criar a ideia, entender a necessidade do usuário, definir os requisitos, revisar e testar o resultado. A IA acelera a escrita do código; a responsabilidade pelo que vai para o ar é minha.',
   'Fora do software, sou iniciante no universo maker: estudo impressão 3D pela Bambu Academy e modelagem no Fusion 360, e estou criando o 3DroneAssú, um hub de estudos que une impressão 3D, sistemas e drones.',
 ]
 
@@ -178,7 +178,7 @@ export const formacao = [
   { curso: 'Engenharia da Computação', instituicao: 'Descomplica Faculdade Digital', status: '2024 – 2027 · em andamento' },
   { curso: 'Técnico em Análise e Desenvolvimento de Sistemas', instituicao: 'ETE Jurandir Bezerra Lins', status: '2021 – 2022' },
   { curso: 'Aceleração de Carreira em Design Orientado a Dados', instituicao: 'CESAR School', status: '2025' },
-  { curso: 'Qualificação Profissional em Eletricidade Industrial', instituicao: 'IFPE Campus Igarassu', status: '2026 – 2027 · em andamento' },
+  { curso: 'Eletricista Industrial (FIC), com Petrobras e FAIFSul', instituicao: 'IFPE Campus Igarassu', status: '2026 – 2027 · em andamento' },
   { curso: 'Metrologia Dimensional', instituicao: 'IFOPI Igarassu', status: '2026' },
 ]
 
