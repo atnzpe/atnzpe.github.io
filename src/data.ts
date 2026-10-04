@@ -124,11 +124,46 @@ export const depoimentos: Depoimento[] = [
       'Sua atuação no Grupo Boticário evidencia sua capacidade de conduzir projetos de implantação de grande escala, incluindo migração de sistemas de automação comercial em milhares de pontos de venda, sempre com foco em eficiência operacional e sucesso do cliente. (...) Recomendo Gleyson com total confiança para posições nas áreas de Desenvolvimento de Software, Implantação de Sistemas, Cloud e Tecnologia da Informação.',
   },
   {
+    nome: 'Crismara Sìlva',
+    cargo: 'Product Manager · AI Product Builder · ERP e SaaS',
+    relacao: 'Trabalhou na mesma equipe',
+    texto:
+      'Ao trabalhar com o Gleyson pude ver sua constante evolução no time! No início percebemos um cara tranquilo, fazendo seu trabalho mas sempre com excelência, ao longo do tempo vimos projetos lindos serem desenvolvidos para automatizar os processos do time e tornar nossas atividades mais ágeis!',
+  },
+  {
+    nome: 'Arildo Xavier',
+    cargo: 'Especialista em Implantação e Suporte de Sistemas ERP Varejo',
+    relacao: 'Sênior no mesmo time, no Grupo Boticário',
+    texto:
+      'Sua proatividade e dedicação impressionam no dia a dia: ele não apenas executa o que é esperado, mas antecipa gargalos e busca constantemente soluções eficientes para garantir o sucesso dos projetos. (...) Com um nível alto de profissionalismo e foco, agrega um valor enorme a qualquer time de implantação e tecnologia.',
+  },
+  {
+    nome: 'Madson Santos',
+    cargo: 'Analista de Implantação Sênior · VR Software',
+    relacao: 'Trabalhou na mesma equipe',
+    texto:
+      'Com o tempo, percebe-se como ele sempre apoia o time de forma integral, buscando melhorias e oferecendo soluções criativas para os mais diversos desafios. Sua dedicação ao aprendizado contínuo traz novas ideias e destaca o melhor de suas habilidades.',
+  },
+  {
     nome: 'Marcel Araujo',
     cargo: 'MBA em Inteligência Artificial e Big Data (USP) · Serviços de Implantação',
     relacao: 'Trabalhou na mesma equipe',
     texto:
       'Trabalhar com Gleyson sempre foi muito gratificante, seu perfil é entusiasmado em procurar meios através da tecnologia para automatizar tarefas e melhorar o trabalho! O seu conhecimento no segmento de varejo é notável!',
+  },
+  {
+    nome: 'Adalberto Santos',
+    cargo: 'Especialista em Projetos Hoteleiros e Gastronômicos · Membro Associado FCSI',
+    relacao: 'Parceiro de projetos, em empresas diferentes',
+    texto:
+      'Seu profundo domínio sobre gestão operacional, padronização, fluxos de trabalho, fichas técnicas e treinamento de equipes o torna uma peça-chave em qualquer projeto de estruturação ou reestruturação de unidades de alimentação.',
+  },
+  {
+    nome: 'Carlos Renato de Lima Ferreira',
+    cargo: 'Administrador de banco de dados',
+    relacao: 'Sênior no mesmo time',
+    texto:
+      'Trabalhar com um profissional como o Gleyson foi uma experiência enriquecedora, profissional ágil, adaptativo e preparado para qualquer momento ou evento. Um profissional altamente dedicado no que faz e sincero em suas ações e atitudes.',
   },
 ]
 
