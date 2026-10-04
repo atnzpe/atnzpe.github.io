@@ -48,6 +48,11 @@ function Cartao({ children }: { children: ReactNode }) {
   )
 }
 
+function iniciais(nome: string) {
+  const partes = nome.split(' ').filter(Boolean)
+  return (partes[0][0] + (partes.length > 1 ? partes[partes.length - 1][0] : '')).toUpperCase()
+}
+
 function LinkExterno({ href, children }: { href: string; children: ReactNode }) {
   return (
     <a
@@ -230,10 +235,38 @@ export default function App() {
                     {d.texto}
                   </p>
                 </blockquote>
-                <figcaption className="mt-auto pt-5">
-                  <p className="font-semibold">{d.nome}</p>
-                  <p className="text-sm text-[var(--muted)]">{d.cargo}</p>
-                  <p className="text-xs text-[var(--muted)]">{d.relacao}</p>
+                <figcaption className="mt-auto flex items-center gap-3 pt-5">
+                  {d.foto ? (
+                    <img
+                      src={`${base}${d.foto}`}
+                      alt=""
+                      width={48}
+                      height={48}
+                      loading="lazy"
+                      className="h-12 w-12 shrink-0 rounded-full object-cover"
+                    />
+                  ) : (
+                    <span
+                      aria-hidden="true"
+                      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--accent-soft)] font-bold text-[var(--accent)]"
+                    >
+                      {iniciais(d.nome)}
+                    </span>
+                  )}
+                  <span>
+                    <span className="block font-semibold">
+                      {d.linkedin ? (
+                        <LinkExterno href={d.linkedin}>
+                          {d.nome}
+                          <span className="sr-only"> no LinkedIn</span>
+                        </LinkExterno>
+                      ) : (
+                        d.nome
+                      )}
+                    </span>
+                    <span className="block text-sm text-[var(--muted)]">{d.cargo}</span>
+                    <span className="block text-xs text-[var(--muted)]">{d.relacao}</span>
+                  </span>
                 </figcaption>
               </figure>
             ))}

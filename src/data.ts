@@ -112,6 +112,10 @@ export type Depoimento = {
   cargo: string
   relacao: string
   texto: string
+  // Endereço do perfil no LinkedIn (opcional). Quando vazio, o nome aparece sem link.
+  linkedin?: string
+  // Foto em public/ (opcional), só com autorização da pessoa. Sem foto, aparecem as iniciais.
+  foto?: string
 }
 
 // Trechos das recomendações recebidas no LinkedIn (texto original, sem edição).
