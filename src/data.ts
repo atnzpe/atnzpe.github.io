@@ -107,6 +107,31 @@ export const instituicoes: Instituicao[] = [
   },
 ]
 
+export type Depoimento = {
+  nome: string
+  cargo: string
+  relacao: string
+  texto: string
+}
+
+// Trechos das recomendações recebidas no LinkedIn (texto original, sem edição).
+export const depoimentos: Depoimento[] = [
+  {
+    nome: 'Carlos Rocha',
+    cargo: 'Analista de Implantação · Consultor de Negócios ERP',
+    relacao: 'Trabalhou na mesma equipe',
+    texto:
+      'Sua atuação no Grupo Boticário evidencia sua capacidade de conduzir projetos de implantação de grande escala, incluindo migração de sistemas de automação comercial em milhares de pontos de venda, sempre com foco em eficiência operacional e sucesso do cliente. (...) Recomendo Gleyson com total confiança para posições nas áreas de Desenvolvimento de Software, Implantação de Sistemas, Cloud e Tecnologia da Informação.',
+  },
+  {
+    nome: 'Marcel Araujo',
+    cargo: 'MBA em Inteligência Artificial e Big Data (USP) · Serviços de Implantação',
+    relacao: 'Trabalhou na mesma equipe',
+    texto:
+      'Trabalhar com Gleyson sempre foi muito gratificante, seu perfil é entusiasmado em procurar meios através da tecnologia para automatizar tarefas e melhorar o trabalho! O seu conhecimento no segmento de varejo é notável!',
+  },
+]
+
 export type Repo = { nome: string; descricao: string; stack: string[] }
 
 export const codigoAberto: Repo[] = [

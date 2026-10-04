@@ -7,7 +7,7 @@ import { resolve } from 'node:path'
 const URL_SITE = 'https://atnzpe.github.io/'
 const ssr = await import(pathToFileURL(resolve('dist-ssr/entry-server.js')).href)
 const { render, dados } = ssr
-const { perfil, sobre, produtos, instituicoes, codigoAberto, experiencias, formacao, certificacoes, stack } = dados
+const { perfil, sobre, produtos, instituicoes, codigoAberto, depoimentos, experiencias, formacao, certificacoes, stack } = dados
 
 const indexPath = resolve('dist/index.html')
 const html = readFileSync(indexPath, 'utf8')
@@ -50,6 +50,9 @@ ${sobre.join('\n\n')}
 
 ## Destaques dos produtos
 ${produtos.map((p) => `### ${p.nome}\n${p.destaques.map((d) => `- ${d}`).join('\n')}`).join('\n\n')}
+
+## Depoimentos (recomendações do LinkedIn)
+${depoimentos.map((d) => `- ${d.nome} (${d.cargo}): "${d.texto}"`).join('\n')}
 
 ## Experiência
 ${experiencias.map((e) => `### ${e.cargo} · ${e.empresa} (${e.periodo})\n${e.itens.map((i) => `- ${i}`).join('\n')}`).join('\n\n')}

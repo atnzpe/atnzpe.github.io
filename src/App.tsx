@@ -2,6 +2,7 @@ import { useState, type ReactNode } from 'react'
 import {
   certificacoes,
   codigoAberto,
+  depoimentos,
   experiencias,
   formacao,
   instituicoes,
@@ -15,6 +16,7 @@ const navegacao = [
   { id: 'sobre', rotulo: 'Sobre' },
   { id: 'produtos', rotulo: 'Produtos' },
   { id: 'instituicoes', rotulo: 'Instituições' },
+  { id: 'depoimentos', rotulo: 'Depoimentos' },
   { id: 'experiencia', rotulo: 'Experiência' },
   { id: 'contato', rotulo: 'Contato' },
 ]
@@ -211,6 +213,35 @@ export default function App() {
               </Cartao>
             ))}
           </div>
+        </Secao>
+
+        <Secao id="depoimentos" titulo="O que dizem sobre mim">
+          <div className="grid gap-6 md:grid-cols-2">
+            {depoimentos.map((d) => (
+              <figure
+                key={d.nome}
+                className="flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6"
+              >
+                <blockquote className="leading-relaxed">
+                  <p>
+                    <span aria-hidden="true" className="mr-1 text-2xl font-bold text-[var(--accent)]">
+                      “
+                    </span>
+                    {d.texto}
+                  </p>
+                </blockquote>
+                <figcaption className="mt-auto pt-5">
+                  <p className="font-semibold">{d.nome}</p>
+                  <p className="text-sm text-[var(--muted)]">{d.cargo}</p>
+                  <p className="text-xs text-[var(--muted)]">{d.relacao}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-6 text-sm text-[var(--muted)]">
+            Recomendações recebidas no{' '}
+            <LinkExterno href={`${perfil.linkedin}details/recommendations/`}>LinkedIn</LinkExterno>.
+          </p>
         </Secao>
 
         <Secao id="codigo-aberto" titulo="Código aberto">
