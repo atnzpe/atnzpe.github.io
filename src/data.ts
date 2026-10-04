@@ -13,7 +13,7 @@ export const perfil = {
   instagram: 'https://www.instagram.com/3droneassu/',
   curriculo: 'curriculo-gleyson-atanazio.pdf',
   // Coloque a foto em public/ (ex.: 'foto-gleyson.jpg'). Vazio = sem foto.
-  foto: '',
+  foto: 'foto-gleyson.jpg',
 }
 
 export const sobre = [

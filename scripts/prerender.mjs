@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, rmSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 import { resolve } from 'node:path'
 
-const URL_SITE = 'https://atnzpe.github.io/my_portifolio/'
+const URL_SITE = 'https://atnzpe.github.io/'
 const ssr = await import(pathToFileURL(resolve('dist-ssr/entry-server.js')).href)
 const { render, dados } = ssr
 const { perfil, sobre, produtos, instituicoes, codigoAberto, experiencias, formacao, certificacoes, stack } = dados

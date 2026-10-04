@@ -1,6 +1,6 @@
 // Service worker do portfólio: rede primeiro para páginas, cache primeiro para arquivos.
-const CACHE = 'portfolio-v1'
-const BASE = '/my_portifolio/'
+const CACHE = 'portfolio-v2'
+const BASE = '/'
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll([BASE])))

@@ -1,6 +1,6 @@
 # Portfólio · Gleyson Atanazio
 
-Site pessoal publicado em **https://atnzpe.github.io/my_portifolio/**.
+Site pessoal publicado em **https://atnzpe.github.io/**.
 
 Feito com React, TypeScript, Vite e Tailwind CSS. O deploy é automático: cada push na `main` gera o build e publica no GitHub Pages (`.github/workflows/deploy.yml`).
 
