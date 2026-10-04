@@ -1,0 +1,16 @@
+{
+  "name": "Gleyson Atanazio · Desenvolvedor Full Stack Júnior",
+  "short_name": "Gleyson",
+  "description": "Portfólio de Gleyson Atanazio: Dojo Manager, SoFi OS e projetos com CBSA, IBTO, Takimura Fight e COBRAM.",
+  "lang": "pt-BR",
+  "start_url": "/my_portifolio/",
+  "scope": "/my_portifolio/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#c2410c",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

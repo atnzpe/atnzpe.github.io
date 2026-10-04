@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 import {
   certificacoes,
   codigoAberto,
@@ -59,7 +59,11 @@ function LinkExterno({ href, children }: { href: string; children: ReactNode }) 
   )
 }
 
+const base = import.meta.env.BASE_URL
+
 export default function App() {
+  const [menuAberto, setMenuAberto] = useState(false)
+
   return (
     <>
       <a
@@ -83,21 +87,49 @@ export default function App() {
               </li>
             ))}
           </ul>
+          <button
+            type="button"
+            className="rounded-lg border border-[var(--border)] px-3 py-1.5 text-sm font-semibold sm:hidden"
+            aria-expanded={menuAberto}
+            aria-controls="menu-celular"
+            onClick={() => setMenuAberto((aberto) => !aberto)}
+          >
+            {menuAberto ? 'Fechar' : 'Menu'}
+          </button>
         </nav>
+        {menuAberto && (
+          <ul id="menu-celular" className="border-t border-[var(--border)] px-4 py-2 sm:hidden">
+            {navegacao.map((item) => (
+              <li key={item.id}>
+                <a href={`#${item.id}`} className="block py-3 text-base" onClick={() => setMenuAberto(false)}>
+                  {item.rotulo}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </header>
 
       <main id="conteudo" className="mx-auto max-w-5xl px-4">
-        <section id="topo" className="py-16 sm:py-24">
+        <section id="topo" className="flex flex-col-reverse gap-8 py-16 sm:flex-row sm:items-center sm:justify-between sm:py-24">
+          <div>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[var(--accent)]">{perfil.local}</p>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl">{perfil.nome}</h1>
           <p className="mt-3 text-xl text-[var(--muted)] sm:text-2xl">{perfil.titulo}</p>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed">{perfil.resumo}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
+              href={`${base}${perfil.curriculo}`}
+              download
+              className="rounded-lg bg-[var(--accent)] px-5 py-2.5 font-semibold text-white hover:opacity-90 dark:text-slate-950"
+            >
+              Baixar currículo (PDF)
+            </a>
+            <a
               href={perfil.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-[var(--accent)] px-5 py-2.5 font-semibold text-white hover:opacity-90 dark:text-slate-950"
+              className="rounded-lg border border-[var(--border)] bg-[var(--surface)] px-5 py-2.5 font-semibold hover:border-[var(--accent)]"
             >
               LinkedIn
             </a>
@@ -116,6 +148,16 @@ export default function App() {
               E-mail
             </a>
           </div>
+          </div>
+          {perfil.foto && (
+            <img
+              src={`${base}${perfil.foto}`}
+              alt={`Foto de ${perfil.nome}`}
+              width={224}
+              height={224}
+              className="h-40 w-40 shrink-0 rounded-full border-4 border-[var(--surface)] object-cover shadow-lg sm:h-56 sm:w-56"
+            />
+          )}
         </section>
 
         <Secao id="sobre" titulo="Sobre">

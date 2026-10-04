@@ -11,6 +11,9 @@ export const perfil = {
   linkedin: 'https://www.linkedin.com/in/gleysonatanazio/',
   github: 'https://github.com/atnzpe',
   instagram: 'https://www.instagram.com/3droneassu/',
+  curriculo: 'curriculo-gleyson-atanazio.pdf',
+  // Coloque a foto em public/ (ex.: 'foto-gleyson.jpg'). Vazio = sem foto.
+  foto: '',
 }
 
 export const sobre = [
