@@ -3,19 +3,21 @@
 
 export const perfil = {
   nome: 'Gleyson Atanazio',
-  titulo: 'Desenvolvedor Full Stack · Implantação de Software',
+  titulo: 'Desenvolvedor Full Stack Júnior · Implantação de Software',
   local: 'Igarassu, PE · presencial, híbrido ou remoto',
   resumo:
-    'Mais de 14 anos levando tecnologia para o dia a dia de negócios reais: do suporte técnico e da implantação de sistemas de PDV à construção de SaaS para artes marciais, educação e pequenos negócios.',
+    'Mais de 14 anos levando tecnologia para o dia a dia de negócios reais. Hoje aprendo construindo: SaaS para artes marciais, educação e pequenos negócios, do banco de dados à tela.',
   email: 'gleysonasilva@gmail.com',
   linkedin: 'https://www.linkedin.com/in/gleysonatanazio/',
   github: 'https://github.com/atnzpe',
+  instagram: 'https://www.instagram.com/3droneassu/',
 }
 
 export const sobre = [
-  'Comecei na logística e no almoxarifado, passei mais de dez anos no suporte e na implantação de sistemas de automação comercial (NCR Colibri, food service) e, nos últimos quatro anos, conduzi implantações e migrações de dados de PDVs e back-office nas franquias do Grupo Boticário.',
-  'Essa vivência de operação é o que guia o software que eu construo hoje: sistemas que resolvem a rotina de quem está no balcão, no tatame ou na secretaria, com segurança de dados levada a sério desde o banco.',
-  'Uso Claude Code e Gemini no meu fluxo de desenvolvimento, sempre com revisão, testes e documentação. A IA acelera; a responsabilidade pelo resultado continua minha.',
+  'Tenho mais de 14 anos em suporte B2B, infraestrutura e implantação de sistemas: suporte ao NCR Colibri, onboarding em food service e, no Grupo Boticário, implantação e sustentação de mais de 4.500 PDVs em franquias, incluindo migrações de dados de sistemas legados.',
+  'Sou técnico em Análise e Desenvolvimento de Sistemas e estou no 5º período de Engenharia da Computação. Aprendo construindo: cada projeto deste portfólio começou do zero e me obrigou a estudar o que eu ainda não sabia.',
+  'Uso Claude Code e Gemini como parceiros diários de programação, na arquitetura, no código e na documentação. A IA acelera; entender, revisar e testar o resultado continua sendo responsabilidade minha.',
+  'Fora do software, sou iniciante no universo maker: estudo impressão 3D pela Bambu Academy e modelagem no Fusion 360, e estou criando o 3DroneAssú, um hub de estudos que une impressão 3D, sistemas e drones.',
 ]
 
 export type Produto = {
@@ -122,8 +124,8 @@ export type Experiencia = {
 
 export const experiencias: Experiencia[] = [
   {
-    cargo: 'Desenvolvedor Full Stack',
-    empresa: 'Projetos próprios e instituições esportivas e de ensino',
+    cargo: 'Desenvolvedor Full Stack Júnior',
+    empresa: 'Projetos próprios e trabalho voluntário',
     periodo: '2024 – atual',
     itens: [
       'Criação do Dojo Manager e do SoFi OS, do modelo de dados à interface',

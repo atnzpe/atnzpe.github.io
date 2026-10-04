@@ -264,6 +264,7 @@ export default function App() {
             </a>
             <LinkExterno href={perfil.linkedin}>LinkedIn</LinkExterno>
             <LinkExterno href={perfil.github}>GitHub</LinkExterno>
+            <LinkExterno href={perfil.instagram}>Instagram 3DroneAssú</LinkExterno>
           </p>
         </Secao>
       </main>
