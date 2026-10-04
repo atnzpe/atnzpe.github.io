@@ -345,10 +345,11 @@ export default function App() {
         </Secao>
 
         <Secao id="stack" titulo="Stack">
-          <dl className="grid gap-6 sm:grid-cols-2">
+          <dl className="grid gap-8">
             {stack.map((g) => (
               <div key={g.grupo}>
-                <dt className="mb-2 font-semibold">{g.grupo}</dt>
+                <dt className="font-semibold">{g.grupo}</dt>
+                <dd className="mb-3 text-sm text-[var(--muted)]">{g.descricao}</dd>
                 <dd className="flex flex-wrap gap-2">
                   {g.itens.map((item) => (
                     <Tag key={item}>{item}</Tag>

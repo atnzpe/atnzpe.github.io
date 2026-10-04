@@ -262,10 +262,24 @@ export const certificacoes = [
   { nome: 'Agilidade: Soluções de Techdesign', emissor: 'CESAR School · 2025' },
 ]
 
-export const stack: { grupo: string; itens: string[] }[] = [
-  { grupo: 'Front-end', itens: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Bun'] },
-  { grupo: 'Back-end e dados', itens: ['Supabase', 'PostgreSQL', 'PHP', 'Laravel', 'MySQL', 'Python', 'FastAPI', 'Firebase'] },
-  { grupo: 'Apps e automação', itens: ['Flet', 'Google Apps Script'] },
-  { grupo: 'IA no desenvolvimento', itens: ['Claude Code', 'Gemini'] },
-  { grupo: 'Entrega e qualidade', itens: ['Git', 'GitHub Actions', 'Vercel', 'Vitest', 'Pest', 'pytest', 'WCAG'] },
+// Stack por nível de domínio, de forma sincera.
+export const stack: { grupo: string; descricao: string; itens: string[] }[] = [
+  {
+    grupo: 'Uso nos meus projetos',
+    descricao: 'Ferramentas com que já entreguei funcionalidades em produção ou em projetos ativos.',
+    itens: [
+      'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Bun', 'Supabase', 'PostgreSQL', 'PHP', 'MySQL',
+      'Python', 'Flet', 'Firebase', 'Google Apps Script', 'Git', 'GitHub Actions', 'Vercel', 'Claude Code', 'Gemini',
+    ],
+  },
+  {
+    grupo: 'Em prática',
+    descricao: 'Já uso, mas ainda estou ganhando profundidade.',
+    itens: ['Laravel', 'Vitest', 'Acessibilidade (WCAG)', 'SEO'],
+  },
+  {
+    grupo: 'Estudando',
+    descricao: 'Próximos passos de estudo, aplicados aos meus projetos.',
+    itens: ['FastAPI', 'Pest', 'pytest'],
+  },
 ]
