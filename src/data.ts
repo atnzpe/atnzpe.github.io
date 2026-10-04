@@ -135,7 +135,7 @@ export const experiencias: Experiencia[] = [
     empresa: 'Grupo Boticário · remoto',
     periodo: 'mai/2022 – mai/2026',
     itens: [
-      'Implantação de novas tecnologias para ativação de PDVs e soluções de back-office em franquias',
+      'Sustentação e implantação em escala: mais de 4.500 PDVs e soluções de back-office em franquias',
       'Condução de migrações de dados de sistemas legados, da validação ao desligamento do sistema antigo',
       'Acompanhamento do rollout das esteiras de implantação junto às equipes técnicas e de atendimento',
     ],
@@ -170,20 +170,24 @@ export const experiencias: Experiencia[] = [
 ]
 
 export const formacao = [
-  { curso: 'Engenharia da Computação', instituicao: 'Faculdade Descomplica', status: 'Em andamento' },
-  { curso: 'Técnico em Desenvolvimento de Software', instituicao: 'ETE Jurandir Bezerra Lins', status: 'Concluído' },
+  { curso: 'Engenharia da Computação', instituicao: 'Descomplica Faculdade Digital', status: '2024 – 2027 · em andamento' },
+  { curso: 'Técnico em Análise e Desenvolvimento de Sistemas', instituicao: 'ETE Jurandir Bezerra Lins', status: '2021 – 2022' },
+  { curso: 'Aceleração de Carreira em Design Orientado a Dados', instituicao: 'CESAR School', status: '2025' },
 ]
 
 export const certificacoes = [
-  { nome: 'Scrum Foundation Professional Certificate (SFPC)', emissor: 'CertiProf' },
+  { nome: 'Scrum Foundation Professional Certificate (SFPC)', emissor: 'CertiProf · 2022' },
   { nome: 'Developing Generative AI Solutions', emissor: 'AWS · 2026' },
   { nome: 'Essentials of Prompt Engineering', emissor: 'AWS · 2026' },
   { nome: 'Developing Machine Learning Solutions', emissor: 'AWS · 2026' },
   { nome: 'Responsible AI Practices', emissor: 'AWS · 2025' },
+  { nome: 'Fundamentals of Machine Learning and AI', emissor: 'AWS · 2025' },
+  { nome: 'Introduction to Generative AI', emissor: 'AWS · 2025' },
   { nome: 'Exploring AI Use Cases and Applications', emissor: 'AWS · 2025' },
   { nome: 'Introduction to AI', emissor: 'Coursera · 2025' },
+  { nome: 'Python para IA: do zero ao primeiro chatbot', emissor: 'Asimov Academy · 2025' },
+  { nome: 'Python Developer', emissor: 'Sololearn · 2025' },
   { nome: 'Agilidade: Soluções de Techdesign', emissor: 'CESAR School · 2025' },
-  { nome: 'Introdução ao Design Orientado a Dados', emissor: 'CESAR School · 2025' },
 ]
 
 export const stack: { grupo: string; itens: string[] }[] = [
