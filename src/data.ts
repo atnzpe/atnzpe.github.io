@@ -137,6 +137,7 @@ export const depoimentos: Depoimento[] = [
   {
     nome: 'Arildo Xavier',
     cargo: 'Especialista em Implantação e Suporte de Sistemas ERP Varejo',
+    foto: 'depoimentos/arildo-xavier.jpg',
     relacao: 'Sênior no mesmo time, no Grupo Boticário',
     texto:
       'Sua proatividade e dedicação impressionam no dia a dia: ele não apenas executa o que é esperado, mas antecipa gargalos e busca constantemente soluções eficientes para garantir o sucesso dos projetos. (...) Com um nível alto de profissionalismo e foco, agrega um valor enorme a qualquer time de implantação e tecnologia.',
