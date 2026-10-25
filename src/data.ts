@@ -18,6 +18,8 @@ export const perfil = {
 
 export const sobre = [
   'Tenho mais de 14 anos em suporte B2B, infraestrutura e implantação de sistemas: suporte ao NCR Colibri, onboarding em food service e, no Grupo Boticário, implantação e sustentação de mais de 4.500 PDVs em franquias, incluindo migrações de dados de sistemas legados.',
+  // Trabalho atual (desde out/2026): o olhar de implantação aplicado ao estoque.
+  'Hoje sou Auxiliar de Estoque na Gaúcho Parafusos, em Igarassu: organizo o estoque e o cadastro de produtos e ajudo a implantar processos e rotinas no setor. É o mesmo trabalho de implantação que fiz por 14 anos, agora no chão do armazém, e ele alimenta direto o que construo em software.',
   'Sou técnico em Análise e Desenvolvimento de Sistemas e estou no 5º período de Engenharia da Computação. Aprendo construindo: cada projeto deste portfólio começou do zero e me obrigou a estudar o que eu ainda não sabia.',
   'Desenvolvo em pair programming com IA (Claude Code e Gemini). Meu papel: criar a ideia, entender a necessidade do usuário, definir os requisitos, revisar e testar o resultado. A IA acelera a escrita do código; a responsabilidade pelo que vai para o ar é minha.',
   'Fora do software, sou iniciante no universo maker: estudo impressão 3D pela Bambu Academy e modelagem no Fusion 360, e estou criando o 3DroneAssú, um hub de estudos que une impressão 3D, sistemas e drones.',
@@ -78,18 +80,28 @@ export const instituicoes: Instituicao[] = [
   {
     sigla: 'CBSA',
     nome: 'Confederação Brasileira de Sambo',
+    // Situação de 24/10/2026: portal em produção e painel novo em Laravel em construção.
     trabalho:
-      'Refatoração do portal com foco em SEO, acessibilidade e mobile first, e painel administrativo de notícias e cursos.',
-    stack: ['PHP 8', 'MySQL', 'GitHub Actions'],
+      'Portal em produção com SEO, mobile first e acessibilidade (contraste AA, menus pelo teclado, leitor de tela), tradução em vários idiomas e imagens otimizadas (de 13,9 MB para 5,6 MB). Em construção: o novo painel administrativo em Laravel, com login protegido contra tentativas repetidas, usuários, papéis e permissões, federações, notícias com editor de blocos e versões, e galeria de fotos com regras da LGPD.',
+    stack: ['PHP 8', 'Laravel 13', 'MySQL', 'GitHub Actions'],
     site: 'https://www.sambocbsa.com.br/',
   },
   {
     sigla: 'IBTO',
     nome: 'Instituto Brasileiro de Treinamento Operacional',
+    // Situação de 24/10/2026: site e plataforma no ar na homologação, para o piloto.
     trabalho:
-      'Site institucional e plataforma de cursos online (cursos, matrículas, certificados com validação pública e área do filiado), em desenvolvimento.',
-    stack: ['React', 'TypeScript', 'Laravel 13', 'MySQL'],
+      'Site institucional e plataforma de cursos, no ar em homologação para o piloto: matrículas com conferência de comprovante, provas de múltipla escolha corrigidas no servidor, certificados com número de série e validação pública, livro-caixa e relatórios financeiros, anuidade dos filiados, Rede Nacional de instrutores por estado, três idiomas, política de privacidade (LGPD) e testes automáticos de acessibilidade e desempenho a cada publicação.',
+    stack: ['React', 'TypeScript', 'Laravel 13', 'Inertia', 'MySQL', 'Pest', 'GitHub Actions'],
     site: 'https://ib-to.org',
+  },
+  {
+    // Cliente ainda sem autorização para aparecer pelo nome; por isso não há sigla nem site.
+    sigla: 'Cursos de drone',
+    nome: 'Plataforma de um instrutor de drones táticos',
+    trabalho:
+      'Projeto iniciado em out/2026: avaliação de segurança, LGPD e acessibilidade da maquete feita pelo cliente no Google AI Studio, roteiro em fases e base da plataforma em Laravel 13 + React (40 testes passando). Próximas fases: login e permissões no servidor, pagamento confirmado pelo servidor e documentos dos alunos protegidos.',
+    stack: ['Laravel 13', 'React', 'TypeScript', 'MySQL'],
   },
   {
     sigla: 'Takimura Fight',
@@ -191,12 +203,23 @@ export type Experiencia = {
 
 export const experiencias: Experiencia[] = [
   {
+    // Emprego atual, com carteira assinada desde out/2026.
+    cargo: 'Auxiliar de Estoque',
+    empresa: 'Gaúcho Parafusos e Ferramentas · Igarassu, PE',
+    periodo: 'out/2026 – atual',
+    itens: [
+      'Organização do estoque e do cadastro de produtos',
+      'Implantação de processos e rotinas do setor',
+    ],
+  },
+  {
     cargo: 'Desenvolvedor Full Stack Júnior',
-    empresa: 'Projetos próprios e trabalho voluntário',
+    empresa: 'Projetos próprios, clientes e trabalho voluntário',
     periodo: '2024 – atual',
     itens: [
       'Criação do Dojo Manager e do SoFi OS, do modelo de dados à interface',
-      'Desenvolvimento para CBSA, IBTO, Takimura Fight e COBRAM',
+      'Plataformas em Laravel + React para o IBTO e para um instrutor de drones táticos',
+      'Portal e novo painel em Laravel para a CBSA; trabalho para Takimura Fight e COBRAM',
     ],
   },
   {
@@ -267,18 +290,19 @@ export const stack: { grupo: string; descricao: string; itens: string[] }[] = [
     grupo: 'Uso nos meus projetos',
     descricao: 'Ferramentas com que já entreguei funcionalidades em produção ou em projetos ativos.',
     itens: [
-      'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Bun', 'Supabase', 'PostgreSQL', 'PHP', 'MySQL',
+      'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Bun', 'Supabase', 'PostgreSQL', 'PHP', 'Laravel', 'MySQL',
       'Python', 'Flet', 'Firebase', 'Google Apps Script', 'Git', 'GitHub Actions', 'Vercel', 'Claude Code', 'Gemini',
     ],
   },
   {
+    // Laravel subiu para o grupo de cima em 24/10/2026 (IBTO e CBSA); Pest e Inertia entraram aqui.
     grupo: 'Em prática',
     descricao: 'Já uso, mas ainda estou ganhando profundidade.',
-    itens: ['Laravel', 'Vitest', 'Acessibilidade (WCAG)', 'SEO'],
+    itens: ['Inertia', 'Pest', 'Vitest', 'Acessibilidade (WCAG)', 'SEO', 'Lighthouse'],
   },
   {
     grupo: 'Estudando',
     descricao: 'Próximos passos de estudo, aplicados aos meus projetos.',
-    itens: ['FastAPI', 'Pest', 'pytest'],
+    itens: ['FastAPI', 'pytest'],
   },
 ]
