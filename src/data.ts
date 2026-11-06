@@ -204,12 +204,15 @@ export type Experiencia = {
 export const experiencias: Experiencia[] = [
   {
     // Emprego atual, com carteira assinada desde out/2026.
+    // Projeto de organização e inventário iniciado em 05/11/2026; resultados finais a registrar após 30/12/2026.
     cargo: 'Auxiliar de Estoque',
     empresa: 'Gaúcho Parafusos e Ferramentas · Igarassu, PE',
     periodo: 'out/2026 – atual',
     itens: [
-      'Organização do estoque e do cadastro de produtos',
-      'Implantação de processos e rotinas do setor',
+      'Projeto de organização e inventário do estoque (em andamento): arrumar, guardar em local seguro, sanear o cadastro e contar mais de 31 mil produtos ativos, com entrega do estoque corrigido à contabilidade até 30/12/2026',
+      'Diagnóstico com dados do ERP (leitura autorizada do banco): saldos negativos, cadastros repetidos e produtos sem grupo, priorizando os itens que mais vendem',
+      'Plano em 9 sprints semanais com Scrum: daily de 15 minutos, definição de pronto em cada tarefa e review e retrospectiva aos sábados',
+      'Rotina do setor com horários e metas diárias, reposição por setor combinada com a equipe de vendas e painel compartilhado com a equipe',
     ],
   },
   {
